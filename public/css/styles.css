@@ -1,0 +1,27 @@
+body {
+	/* margin: 0;
+	padding: 0; */
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+	height: 500px;
+}
+
+h1 {
+	color: red;
+}
+
+.check {
+	width: 5rem;
+	height: 2rem;
+	/* border-radius: 5px; */
+	background-color: #000;
+	color: white;
+	cursor: pointer;
+}
+
+.details {
+	text-align: center;
+	position: relative;
+	top: 50%;
+}

@@ -1,0 +1,47 @@
+<%- include("partials/header") -%>
+
+<div class="details">
+    <h1>Oasys 2021</h1>
+    <button class="check" value="check" type="submit" name="submit" id="rzp-button1">submit</button>
+</div>
+
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <script>
+      axios.post("/order").then((info) => {
+          console.log(info)
+
+          var options = {
+            "key": "rzp_test_WLMh0k8XjuzsrK",
+            "amount": "50000",
+            "currency": "INR",
+            "name": "Oasys 21",
+            "description": "Test Transaction",
+            "image": "https://example.com/your_logo",
+            "order_id": info.data.id, 
+            "callback_url": "/order-complete",
+            "prefill": {
+                "name": "",
+                "email": "",
+                "contact": ""
+            },
+            "notes": {
+                "address": "Hindustan Institute of Technology"
+            },
+            "theme": {
+                "color": "#3399cc"
+            }
+          }
+
+        var rzp1 = new Razorpay(options);
+        document.getElementById('rzp-button1').onclick = function(e){
+            rzp1.open();
+            e.preventDefault();
+}
+
+      })
+  </script>
+
+<%- include("partials/footer") -%>
