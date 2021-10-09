@@ -14,15 +14,43 @@
 
   <meta name="description" content="">
 
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
 
+  <link rel="icon" href="/img/favicon.ico">
 
+
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <!-- AnimeJS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
 </head>
 
 <body>
+  <header>
+    <a href="/" class="logo navTransition"> <img src="/img/logo.png" alt="">OASYS</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu navTransition">
+        <li><a href="/#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="/#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Events</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <li><a href="https://forms.gle/wen2PZogvRZVdKpcA" target="_blank" rel="noreferrer noopener" class="reg" onclick="toggleMenu();">Register</a></li>
+    </ul>
+</header>
+
+
+
+
+
+
+
+
