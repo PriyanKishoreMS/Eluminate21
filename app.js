@@ -12,10 +12,7 @@ app.use(express.json())
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    res.render("main",
-        {
-            homeContent: data[0].brief
-        })
+    res.render("main")
 })
 
 for (let i = 0; i < data.length; i++)

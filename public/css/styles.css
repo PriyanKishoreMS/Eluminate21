@@ -603,6 +603,9 @@ img:hover {
 		writing-mode: vertical-lr;
 		transform: rotate(270deg);
 	}
+	.robo img {
+		visibility: hidden;
+	}
 }
 
 @media (max-width: 600px) {
@@ -612,6 +615,10 @@ img:hover {
 	}
 	.banner {
 		padding: 150px 20px 100px;
+	}
+
+	.banner .textbx {
+		text-align: center;
 	}
 
 	.banner img {
