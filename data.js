@@ -5,7 +5,6 @@ const data = [
       ename: "Project Conversazione",
       brief:
         "“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym.",
-      img1: "https://picsum.photos/400/200",
     },
     {
       id: 2,
@@ -29,7 +28,6 @@ const data = [
       ename: "Capture the Flag",
       brief:
         "This is funny! A smiley face, rolling on the floor, laughing. The face is laughing boundlessly. The emoji version of “rofl“. Stands for „rolling on the floor, laughing“.",
-      img1: "https://picsum.photos/400/200"
     },
     {
       id: 5,
@@ -37,7 +35,6 @@ const data = [
       ename: "Code Debugging",
       brief:
         "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
-      img1: "https://picsum.photos/400/200"
     },
     {
         id: 6,
@@ -45,7 +42,6 @@ const data = [
         ename: "Mr & Ms Solutions",
         brief:
           "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
-        img1: "https://picsum.photos/400/200"
     },
     {
       id: 7,
@@ -61,7 +57,6 @@ const data = [
     ename: "Minute to Win it",
     brief:
       "“You can do that!” or “I feel strong!” Arm with tense biceps. Also used in connection with doing sports, e.g. at the gym.",
-    img1: "https://picsum.photos/400/200",
   },
   {
     id: 9,
@@ -69,7 +64,6 @@ const data = [
     ename: "Treasure Hunt",
     brief:
       "Two hands pressed together. Is currently very introverted, saying a prayer, or hoping for enlightenment. Is also used as a “high five” or to say thank you.",
-    img1: "https://picsum.photos/400/200"
   },
   {
     id: 10,
@@ -77,7 +71,6 @@ const data = [
     ename: "T-Shirt / Game Designing",
     brief:
       "This is funny! A smiley face, rolling on the floor, laughing. The face is laughing boundlessly. The emoji version of “rofl“. Stands for „rolling on the floor, laughing“.",
-      img1: "https://picsum.photos/400/200"
   },
   ];
 

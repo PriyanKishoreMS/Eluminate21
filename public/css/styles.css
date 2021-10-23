@@ -75,7 +75,7 @@ a {
 	width: 30%;
 	position: absolute;
 	bottom: 2vh;
-	left: 60vw;
+	left: 63vw;
 }
 
 .banner {
@@ -104,7 +104,7 @@ a {
 }
 
 .banner h2 span {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	font-weight: 700;
 }
 
@@ -130,6 +130,7 @@ a {
 	letter-spacing: 2px;
 	font-weight: 500;
 	transition: 0.3s;
+	border-radius: 5px;
 }
 
 .btn:hover {
@@ -144,6 +145,7 @@ a {
 	padding: 10px 30px;
 	bottom: 10px;
 	text-transform: uppercase;
+	border-radius: 5px;
 	/* margin-top: 20px;
 	padding: 10px 30px;
 	font-size: 18px;
@@ -151,6 +153,11 @@ a {
 	text-decoration: none;
 	letter-spacing: 2px;
 	font-weight: 500; */
+}
+
+.regbtn {
+	margin: 30px;
+	margin-left: 0;
 }
 
 /* .banner .textbx .btn {
@@ -175,10 +182,14 @@ header img {
 	width: 18%;
 }
 
-/* .logo {
+.logo img {
+	width: 33px;
+	margin-right: 10px;
 	position: relative;
-	bottom: 10px;
-} */
+	top: 3px;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
 
 header.sticky {
 	background: #fff;
@@ -356,8 +367,8 @@ img:hover {
 }
 
 .services .content .servicebx:hover {
-	background: #2196f3;
 	transform: scale(1.07);
+	background: linear-gradient(rgba(191, 75, 130, 255), rgba(118, 40, 166, 255));
 }
 
 /* .services .content .servicebx .btn:hover {
@@ -532,20 +543,38 @@ img:hover {
 		padding: 50px;
 	}
 
-	.countdown {
-		width: 100%;
+	.robo img {
+		visibility: hidden;
 	}
+	header,
+	header.sticky {
+		padding: 20px 50px;
+		z-index: 1;
+	}
+	.banner h2 span {
+		font-size: 1em;
+	}
+	.loader .intro h1 {
+		font-size: 110px;
+		writing-mode: vertical-lr;
+		transform: rotate(270deg);
+	}
+}
 
+@media (max-width: 1500px) {
 	.robo img {
 		visibility: hidden;
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1020px) {
 	header,
 	header.sticky {
 		padding: 20px 50px;
 		z-index: 1;
+	}
+	.countdown {
+		width: 50%;
 	}
 	.menu {
 		position: fixed;
@@ -608,10 +637,10 @@ img:hover {
 		font-size: 3em;
 	}
 	.robo img {
-		width: 50%;
+		width: 40%;
 		position: absolute;
 		bottom: 2vh;
-		left: 50vw;
+		left: 54vw;
 	}
 	.btn {
 		margin-top: 10px;
@@ -664,9 +693,13 @@ img:hover {
 
 @media (max-width: 790px) {
 	.loader .intro h1 {
-		font-size: 100px;
+		font-size: 60px;
 		writing-mode: vertical-lr;
 		transform: rotate(270deg);
+	}
+
+	.countdown {
+		width: 100%;
 	}
 
 	.robo img {
@@ -688,9 +721,17 @@ img:hover {
 	}
 
 	.banner img {
-		width: 70%;
+		width: 60%;
 		margin-bottom: 20px;
 		/* visibility: hidden; */
+	}
+
+	.countdown {
+		font-size: 13px;
+	}
+
+	.banner h2 span {
+		font-size: 100%;
 	}
 
 	.banner h2 {
@@ -718,5 +759,16 @@ img:hover {
 	}
 	.robo img {
 		visibility: hidden;
+	}
+	.regbtn {
+		width: 40%;
+		margin: 20px;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 330px) {
+	.banner h2 span {
+		font-size: 80%;
 	}
 }

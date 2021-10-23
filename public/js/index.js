@@ -10,7 +10,7 @@ function toggleMenu() {
   menu.classList.toggle('active');
 }
 
-var countDate = new Date("October 27, 2021 00:00:00").getTime()
+var countDate = new Date("October 30, 2021 09:00:00").getTime()
 
 const oasysDay = () => {
   var now = new Date().getTime()

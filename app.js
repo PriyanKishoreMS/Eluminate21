@@ -22,11 +22,14 @@ for (let i = 0; i < data.length; i++)
         res.render("events",
             {
                 title: data[i].ename,
-                content: data[i].brief,
-                imgurl: data[i].img1
+                content: data[i].brief
             })
     })
 }
+
+app.get("/reg", (req, res) => {
+    res.render("register")
+})
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Server runnning at port 3000")
