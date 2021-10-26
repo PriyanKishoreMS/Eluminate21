@@ -1,6 +1,6 @@
 # ELUMINATE 21
 
-Repository of Oasys 21 website.</br>An event held by CSE Department, </br>Hindustan Institute of Technology and Science, Chennai
+Repository of Eluminate 21 website.</br>An event held by CSE Department, </br>Hindustan Institute of Technology and Science, Chennai
 
 ## using npm
 
